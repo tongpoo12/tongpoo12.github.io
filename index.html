@@ -1,143 +1,31 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>기본 레이아웃</title>
+	<title>UI 예제</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
-<style>
-	/* 초기화 */
-	* {
-		margin:0;
-	padding:0;
-	color:#222
-	box-sizing:border-box;
-	text-align:center;
-	font-size:13px;
-	}
-	body{
-		min-width:720px
-		padding:15px;
-	}
-	.clear{
-		clear:both;
-		width:100%;
-		height:auto;
-	}
-	
-/* IE 대응 html5 요소 처리 */
-	header,
-	section,
-	main,
-	article,
-	footer,
-	nav{
-		display:block;
-	}
-
-	/* layout - header */
-	.header{
-		margin-bottom:10px;
-		padding:10px;
-		border:2px solid #000;
-		background-color:gray;
-	}
-
-	.nav{
-		height:80px;
-		padding:10px;
-		border:1px dotted blue;
-		background-color:orange;
-	}
-	/* layout - main */
-
-	.main{
-		margin-bottom:10px;
-		padding:10px;
-		border:2px solid black;
-	}
-
-	/* layout - sidemenu */
-	.sidemenu{
-		float:left;
-		width:24%
-	}
-
-	.sidemenu .header{
-	height:60px;
-	padding:10px;
-	border:1px dotted blue;
-	background-color:yellow;
-}
-	.sidemenu .nav{
-	height:300px;
-	padding:10px;
-	border:1px dotted blue;
-	background-color:yellow;
-}
-
-/* layout - csection(contents) */
-.csection{
-		float:right;
-		width:75%;
-
-}
-.chead{
-	height:60px;
-	margin-bottom:5px;
-	padding:10px;
-	border:1px dotted blue;
-	background-color:darkgreen;
-}
-
-.cbody{
-	height:500px;
-	margin-bottom:5px;
-	padding:10px;
-	border:1px dotted blue;
-	background-color:darkgreen;
-}
-
-.cfoot{
-	height:60px;
-	padding:10px;
-	border:1px dotted blue;
-	background-color:darkgreen;
-}
-/* layout - footer */
-.footer{
-	margin-bottom:10px;
-	height:60px;
-	padding:10px;
-	border:2px solid #000;
-	background-color:darkcyan;
-}
-
-</style>
 </head>
 <body>
-	<header class="header">
-		<p>header</p>
-		<nav class="nav"><p>nav</p></nav>
-	</header>
-	<main class="main">
-		<p>MAIN</p>
-		<section class="sidemenu">
-			<p>Section</p>
-			<header class="header"><p>header</p></header>
-			<nav class="nav"><p>nav</p></nav>
-		</section>
-		<section class="csection">
-				<p>Section</p>
-			<header class="chead"><p>cheader</p></header>
-			<article class="cbody"><p>article</p></article>
-			<footer class="cfoot"><p>footer</p></footer>
-		</section>
-		<div class="clear"></div>
-	</main>
-	<footer class="footer"><p>footer</p></footer>
-	<!-- clear 대신 main에 overflow:hidden; 넣어도 됨 -->
+	<!-- 네비게이션 예제 -->
+	<nav class="nav">
+		<ul class="gnb">
+			<li class="dep1">
+				<a href="#">메뉴</a>
+				<ul class="dep2">
+					<li><a href="#">메뉴1-1</a></li>
+					<li><a href="#">메뉴1-2</a></li>
+					<li><a href="#">메뉴1-3</a></li>
+					<li><a href="#">메뉴1-4</a></li>
+					<li><a href="#">메뉴1-5</a></li>
+				</ul>
+			</li>
+			<li class="dep1"><a href="#">메뉴1</a></li>
+			<li class="dep1"><a href="#">메뉴2</a></li>
+			<li class="dep1"><a href="#">메뉴3</a></li>
+		</ul>
+	</nav>
 </body>
 </html>

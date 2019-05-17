@@ -1,0 +1,45 @@
+/* navigation */
+.nav{
+	width:100%;
+}
+.gnb{
+	width:100%;
+}
+.gnb::after{
+	content:"";
+	clear:both;
+	display:block;
+}
+	
+/* depth1 - li*/
+.dep1{
+	float:left;
+	width:25%;
+}
+
+.dep1 > a{
+	display:inline-block;
+	width:100%;
+	padding:10px;
+	background-color:#222;
+	color:#fff;
+	text-align:center;
+}
+/* depth2 - ul*/
+.dep2{
+	display:none;
+}
+.dep2 li{
+
+}
+.dep2 a{
+
+}
+/* depth - hover */
+.dep1 > a:hover{
+	border:1px solid #222;
+	background-color:#fff;
+	color:#222;
+	font-weight:bold;
+
+}
